@@ -1,0 +1,32 @@
+<header>
+  <div class="logo">
+    <div class="logoImg"><img src="img/Лого.svg"></div>
+    <div class="logoText">VETCLINIC</div>
+  </div>
+  <div><a href="index.html">Головна сторінка</a></div>
+  <div><a href="whywe.html">Чому ми</a></div>
+  <div><a href="About.html">Про нас</a></div>
+  <div><a href="Contacts.html" style="margin-right: 10px">Контакти</a></div>
+  <div class="specialsLocation">
+    <div>
+      <div>Збільшити шрифт</div>
+      <input id="seek1" type="range" name="seekbar" step="5" min="8" max="46">
+    </div>
+    <div>
+      <div>Міжлітерний інтервал</div>
+      <input id="seek2" type="range" name="seekbar" step="3" min="1" max="20">
+    </div>
+    <div>
+      <button class="buttons" onclick="speak(window.getSelection())" style="margin-left: 10px">Озвучити</button>
+    </div>
+    <div>
+      <button class="buttons" id="magnify">Екранна лупа</button>
+    </div>
+    <div>
+      <label class="switch" id="switch">
+        <input type="checkbox" id="checkbox" onclick="changeTheme()">
+        <span class="toggleSlide"></span>
+      </label>
+    </div>
+  </div>
+</header>

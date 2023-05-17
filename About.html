@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <title>Вет клініка</title>
+    <link rel="stylesheet" type="text/css" href="custom.css">
+</head>
+<body>
+<header>
+    <div class="logo">
+        <div class="logoImg"><img src="img/Лого.svg"></div>
+        <div class="logoText">VETCLINIC</div>
+    </div>
+    <div><a href="index.html">Головна сторінка</a></div>
+    <div><a href="whywe.html">Чому ми</a></div>
+    <div><a href="About.html">Про нас</a></div>
+    <div><a href="Contacts.html" style="margin-right: 10px">Контакти</a></div>
+    <div class="specialsLocation">
+        <div>
+            <div>Збільшити шрифт</div>
+            <input id="seek1" type="range" name="seekbar" step="5" min="8" max="46">
+        </div>
+        <div>
+            <div>Міжлітерний інтервал</div>
+            <input id="seek2" type="range" name="seekbar" step="3" min="1" max="20">
+        </div>
+        <div>
+            <button class="buttons" onclick="speak(window.getSelection())" style="margin-left: 10px">Озвучити</button>
+        </div>
+        <div>
+            <button class="buttons" id="magnify">Екранна лупа</button>
+        </div>
+        <div>
+            <label class="switch" id="switch">
+                <input type="checkbox" id="checkbox" onclick="changeTheme()">
+                <span class="toggleSlide"></span>
+            </label>
+        </div>
+    </div>
+</header>
+
+<div class="blockMain">
+    <section>
+        <div class='flex-preMain'>
+            <div class="preMain-text">
+                <div>Найкраща Ветклініка</div>
+                <div>в Україні</div>
+            </div>
+        </div>
+    </section>
+    <div class="block12Location">
+        <div class="block1">
+            <div>
+                <div class="block1Location">
+                    <div class="block1TextLocation">
+                        <div><img src="img/up.svg"></div>
+                        <div><p class="headlineText">Про нас</p></div>
+
+                        <div><p class="mainText">Ласкаво просимо до нашої ветеринарної клініки! Ми є професійним
+                            медичним закладом, який пропонує широкий спектр послуг з догляду за тваринами. У нас працює
+                            команда кваліфікованих ветеринарних лікарів, які завжди готові надати вам всю необхідну
+                            допомогу в будь-який час.
+                        </p></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="block2">
+            <div class="block2Back">
+
+                <div><p class="mainText">
+                    У нашій клініці використовується сучасне обладнання та технології, що дозволяє нам забезпечувати
+                    високоякісну медичну допомогу вашим улюбленцям. Ми пропонуємо повний спектр послуг: від
+                    профілактичних оглядів та вакцинації до складних операцій та лікування захворювань.
+                </p></div>
+
+                <div><p class="mainText">Ми розуміємо, як важливо для вас берегти здоров'я та добробут ваших тварин,
+                    тому виконуємо свою роботу з великою відповідальністю та любов'ю до тварин. У нашій клініці ви
+                    можете бути впевнені, що ваші улюбленці знаходяться в надійних руках.</p></div>
+                <div><img src="img/up.svg"></div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+<div class="blockAbout">
+    <div class="blockAboutBack2">
+        <div>
+            <div><p class="TextBlockAbout">Наші </p></div>
+            <div><p class="TextBlockAbout">цілі</p></div>
+            <div><img src="img/Vector.svg"></div>
+        </div>
+    </div>
+</div>
+<div class="block1Location">
+    <div class="mainText">
+        <div class="aboutUs">
+            <p>Наша мета полягає в тому, щоб забезпечити вашим тваринам максимально можливий рівень здоров'я та
+                комфорту. У нашій клініці ви можете очікувати високоякісну медичну допомогу та дружній сервіс. Ми завжди
+                готові допомогти вам з різноманітними проблемами, починаючи від профілактичних оглядів та вакцинації до
+                складних операцій та лікування захворювань.</p>
+            <div>
+                <p>Ми віримо, що ваші тварини - це члени вашої родини, тому ми ставимо свою роботу з великою
+                    відповідальністю та любов'ю. Звертайтеся до нас і ми з радістю надамо всю необхідну допомогу вашим
+                    улюбленцям.</p>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="hamsterBack">
+        <div class="hamster"></div>
+    </div>
+</div>
+<footer>
+    <div class="logo">
+        <div class="logoImg"><img src="img/Лого.svg"></div>
+        <div class="logoText">VETCLINIC</div>
+    </div>
+    <div>Чому ми</div>
+    <div>Про нас</div>
+    <div>Сервіс</div>
+    <div class="specialsLocation">
+        <div><img src="img/inst.svg" style="width: 30px;"></div>
+        <div><img src="img/facebook.svg" style="width: 30px;"></div>
+        <div><img src="img/трубка2.svg" style="width: 30px;"></div>
+        <div>+380040555</div>
+        <div>м.Київ вул.Сумська 36</div>
+    </div>
+</footer>
+<script src="js/theme.js"></script>
+<script src="js/magnifier.js"></script>
+<script src="js/fontSize.js"></script>
+<script src="js/speach.js"></script>
+<script src="js/sliderComments.js"></script>
+</body>
+</html>

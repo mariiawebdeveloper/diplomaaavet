@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <title>Вет клініка</title>
+    <link rel="stylesheet" type="text/css" href="custom.css">
+    <link rel="import" href="header.html">
+</head>
+<body>
+<header>
+    <div class="logo">
+        <div class="logoImg"><img src="img/Лого.svg"></div>
+        <div class="logoText">VETCLINIC</div>
+    </div>
+    <div><a href="index.html">Головна сторінка</a></div>
+    <div><a href="whywe.html">Чому ми</a></div>
+    <div><a href="About.html">Про нас</a></div>
+    <div><a href="Contacts.html" style="margin-right: 10px">Контакти</a></div>
+    <div class="specialsLocation">
+        <div>
+            <div>Збільшити шрифт</div>
+            <input id="seek1" type="range" name="seekbar" step="5" min="8" max="46">
+        </div>
+        <div>
+            <div>Міжлітерний інтервал</div>
+            <input id="seek2" type="range" name="seekbar" step="3" min="1" max="20">
+        </div>
+        <div>
+            <button class="buttons" onclick="speak(window.getSelection())" style="margin-left: 10px">Озвучити</button>
+        </div>
+        <div>
+            <button class="buttons" id="magnify">Екранна лупа</button>
+        </div>
+        <div>
+            <label class="switch" id="switch">
+                <input type="checkbox" id="checkbox" onclick="changeTheme()">
+                <span class="toggleSlide"></span>
+            </label>
+        </div>
+    </div>
+</header>
+
+<section>
+    <h2 class="headlineText">Перевірена якість медичних послуг</h2>
+    <div class="project-gallery" id="gallery">
+        <div class="project">
+            <img src="https://center-slon.ru/wp-content/uploads/2020/12/6-1422.jpg"
+                 alt="Project 1" width="500">
+            <h3>Клініка "Турбота про Тварин"</h3>
+            <p>Наша клініка працює над порятунком та вилікуванням бездомних тварин. Ми надаємо їм необхідну медичну
+                допомогу, забезпечуємо їм затишне притулок та шукаємо нові люблячі сім'ї для усіх наших пацієнтів.</p>
+        </div>
+        <div class="project">
+            <img src="https://zoomedic.ru/wp-content/uploads/2020/08/1-1.jpg"
+                 alt="Project 2" width="500">
+            <h3>Рятунок та відновлення диких тварин</h3>
+            <p>Ми працюємо над відновленням та поверненням диких тварин до їх природного середовища. Наша команда
+                дбає про їх благополуччя, надаючи медичну допомогу, годування та піклуючись про них до повного
+                одужання.</p>
+        </div>
+        <div class="project">
+            <img src="https://vkdobrieruki.ru/d/image002_0.jpg"
+                 alt="Project 3" width="500">
+            <h3>Програма адопції тварин</h3>
+            <p>Наша клініка пропонує програму адопції, яка допомагає знайти нові домівки для бездомних тварин. Ми
+                забезпечуємо відповідальних власників для кожного тварини та забезпечуємо післяпродажну підтримку для
+                їх благополуччя.</p>
+        </div>
+        <div class="project">
+            <img src="https://image2.yell.ru/imager/YTgwY2U1YjEwZWQzZTNkNGNjM/480x240/responses/4/2/4/r_1861642_26661_zkztgjdz5pt7iv8n_1640769406.jpg" alt="Project 4"
+                 width="500">
+            <h3>Програма стерилізації та кастрації</h3>
+            <p>
+                Наша клініка здійснює програму стерилізації та кастрації бездомних тварин з метою зменшення їхньої популяції та
+                контролю розмноження. Ми надаємо ці послуги безкоштовно та допомагаємо забезпечити тимчасовий догляд за твариною
+                після операції.</p>
+        </div>
+
+    </div>
+    <p class="mainText">Досвідчені лікарі та уважний персонал - це далеко не все, що наша ветеринарна клініка може запропонувати своїм
+        клієнтам. Ознайомтесь із нашим переліком переваг, які роблять нашу клініку відмінним вибором для вашої
+        тварини:</p>
+
+    <ul>
+        <li class="mainText">Повний спектр послуг: наші ветеринарні лікарі готові надати всебічну допомогу вашій тварині, від
+            профілактичних оглядів та вакцинації до складних операцій та лікування захворювань.
+        </li>
+        <li class="mainText">Найсучасніше обладнання: наша клініка оснащена найновішим обладнанням, що дозволяє нам забезпечувати
+            високоякісну медичну допомогу вашим тваринам.
+        </li>
+        <li class="mainText">Дружній та уважний персонал: наші співробітники люблять тварин та ставляться до них з повагою. Ми завжди
+            готові допомогти вам та вашим улюбленцям, відповісти на всі запитання та забезпечити найкращий сервіс.
+        </li>
+        <li class="mainText">Надійність та відповідальність: ми розуміємо, наскільки важливо для вас здоров'я та добробут вашої тварини.
+            Тому ми завжди працюємо з великою відповідальністю та надійністю, щоб забезпечити максимальну допомогу
+            вашому улюбленцеві.
+        </li>
+        <li class="mainText">Зручний графік роботи: ми розуміємо, наскільки важко знайти час для відвідування ветеринара. Тому ми
+            працюємо у зручний для вас графік, щоб ви могли забезпечити необхідну допомогу своїй тварині без додаткових зусиль.
+        </li>
+
+        <li class="mainText">Перевірена якість медичних послуг: ми завжди дбаємо про якість наших послуг та забезпечуємо високий рівень
+            медичної допомоги. Ми регулярно проходимо аудити та перевірки, щоб гарантувати, що наші пацієнти отримують
+            найкращу можливу допомогу.
+        </li>
+    </ul>
+    <p class="mainText">Зверніться до нас і переконайтеся в високій якості наших послуг!</p>
+</section>
+
+<footer>
+    <div class="logo">
+        <div class="logoImg"><img src="img/Лого.svg"></div>
+        <div class="logoText">VETCLINIC</div>
+    </div>
+    <div>Чому ми</div>
+    <div>Про нас</div>
+    <div>Сервіс</div>
+    <div class="specialsLocation">
+        <div><img src="img/inst.svg" style="width: 30px;"></div>
+        <div><img src="img/facebook.svg" style="width: 30px;"></div>
+        <div><img src="img/трубка2.svg" style="width: 30px;"></div>
+        <div>+380040555</div>
+        <div>м.Київ вул.Сумська 36</div>
+    </div>
+</footer>
+<script src="js/theme.js"></script>
+<script src="js/magnifier.js"></script>
+<script src="js/fontSize.js"></script>
+<script src="js/speach.js"></script>
+<script src="js/sliderComments.js"></script>
+</body>
+</html>

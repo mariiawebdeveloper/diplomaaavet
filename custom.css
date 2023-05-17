@@ -1,0 +1,714 @@
+body {
+    background-color: #6ED29C;
+    margin: 0;
+    padding: 30px;
+
+}
+main{
+color: #FFFFFF;
+}
+
+p {
+    margin: 1px;
+}
+
+header {
+    padding: 5px;
+    margin: 5px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 29px;
+    border-bottom: #FFFFFF 4px solid;
+
+
+}
+header a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+header a:hover {
+    text-shadow: 4px 4px 15px rgba(235, 235, 235, 1);
+}
+
+footer {
+    padding: 5px;
+    margin: 5px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 29px;
+    border-top: #FFFFFF 4px solid;
+
+
+
+}
+
+#seek {
+    background-color: #6ED29C;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+}
+
+.logoText {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 59px;
+}
+
+.specialsLocation {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.blockMain {
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+.block1 {
+    margin-right: 50px;
+}
+
+.block12Location {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.block1Location {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 50px;
+    align-items: center;
+}
+
+.block1TexLocation {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.headlineText {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 117px;
+    color: #FFFFFF;
+}
+
+.mainText {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 29px;
+    color: #FFFFFF;
+    margin-left: 20px;
+    width: 80%;
+}
+
+.imageStyle {
+    width: 500px;
+    height: 500px;
+}
+
+.headlineTextBlock2 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 44px;
+    color: #FFFFFF;
+}
+
+.mainTextBlock2 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 22px;
+    color: #FFFFFF;
+    background-color: rgba(110, 210, 156, 0.33);;
+}
+
+.block2 {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 50px;
+    align-items: center;
+}
+
+.block2Back {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/**/
+
+
+.buttons:focus {
+    outline: none;
+}
+
+.buttons:active {
+    box-shadow: 0 1px #424242;
+    transform: translateY(1px);
+}
+
+.buttons {
+    color: #6ED29C;
+    border: none;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+/**/
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+
+/* The slider */
+.toggleSlide {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: whitesmoke;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.toggleSlide:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .toggleSlide {
+    background-color: lightgreen;
+}
+
+input:focus + .toggleSlide {
+    box-shadow: 0 0 1px darkgrey;
+}
+
+input:checked + .toggleSlide:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.toggleSlide {
+    border-radius: 34px;
+}
+
+.toggleSlide:before {
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+input + .toggleSlide:after {
+    content: "Light";
+    color: #6ED29C;
+    text-align: right;
+    font-size: 10px;
+    margin-left: 33px;
+}
+
+input:checked + .toggleSlide:after {
+    content: "Dark";
+    color: white;
+    text-align: left;
+    font-size: 10px;
+    margin-left: 5px;
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+}
+
+/**/
+:root {
+    --scale: 1;
+    --size: 200px;
+    --scrollbar-width: 36px;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+.wrapper {
+    padding: 10%;
+}
+
+.handle {
+    position: absolute;
+    height: calc(var(--size) * 1.9);
+    width: calc(var(--size) * 1.9);
+    background-size: contain;
+    filter: drop-shadow(-2px -2px 10px rgba(0, 0, 0, 0.5));
+}
+
+.magnifying-glass {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    height: var(--size);
+    width: var(--size);
+    border: solid 3px black;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.magnifying-glass::after {
+    display: block;
+    position: relative;
+    content: "";
+    top: calc(2 * var(--size) / 3);
+    left: calc(2 * var(--size) / 3);
+    height: 15px;
+    width: 30px;
+    border-radius: 50%;
+    z-index: 10;
+    transform: rotate(-45deg);
+    opacity: 70%;
+}
+
+.body-clone {
+    position: absolute;
+    margin-left: 8vw;
+    padding: inherit;
+    height: 100vh;
+    width: calc(100vw - var(--scrollbar-width));
+    transform: scale(var(--scale));
+}
+
+
+/**/
+
+.blockAbout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin-bottom: 30px;
+}
+
+.blockAboutBack {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("img/laba.svg");
+    background-repeat: no-repeat;
+    background-size: 800px;
+    padding: 60px;
+}
+
+.blockAboutBack2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://images.fastcompany.net/image/upload/w_596,c_limit,q_auto:best,f_auto/wp-cms/uploads/2021/08/15-90670450-interior-design-for-pets-is-a-thing.jpg");
+    background-repeat: no-repeat;
+    background-size: 800px;
+    width: 700px;
+
+}
+
+.TextBlockAbout {
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 117px;
+    background: rgba(110, 210, 156, 0.33);
+    color: #FFFFFF;
+}
+
+.hamsterBack {
+    background: white;
+}
+
+.hamster {
+    background: url("https://www.thehappychickencoop.com/wp-content/uploads/2021/10/Top-Parrot-Species-1.jpg") no-repeat center;
+    background-size: 424px;
+    padding: 284px;
+
+
+}
+
+li {
+    margin-right: 220px;
+    padding-bottom: 10px;
+}
+
+.aboutUs {
+    display: flex;
+    flex-direction: column;
+}
+
+.comments {
+    background-color: #FFFFFF;
+    padding: 100px;
+}
+
+/**/
+
+/* slider обертка */
+.slider {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+/*Окно со слайдами*/
+.slider-content {
+    position: relative;
+    width: 100%;
+}
+
+/*Контейнер для слайдов (передвигаем)*/
+.slider-content-wrapper {
+    display: flex;
+    height: 300px;
+    transition: transform 0.5s ease-in-out;
+}
+
+/*Слайд*/
+.slider-content__item {
+    flex: 1 0 100%;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-1 {
+    background-color: #6ED29C;
+}
+
+.image-2 {
+    background-color: #6ED29C;
+}
+
+.image-3 {
+    background-color: #6ED29C;
+}
+
+.image-4 {
+    background-color: #6ED29C;
+}
+
+.image-5 {
+    background-color: #6ED29C;
+}
+
+.image-6 {
+    background-color: #6ED29C;
+}
+
+
+/* Блок с контролами */
+.slider-controls {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Блок с контролами внутри окна */
+.slider-content__controls {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    /*transform: translateY(-50%);*/
+    /*padding:0 15px;*/
+}
+
+/* Arrows */
+.prev-arrow, .next-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.3);
+    width: 20px;
+    transition: all 0.3s;
+}
+
+.prev-arrow {
+    left: 20px;
+}
+
+.next-arrow {
+    right: 20px;
+}
+
+.prev-arrow:hover,
+.next-arrow:hover {
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+/* Dots */
+.dots {
+    position: absolute;
+    display: flex;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10%;
+}
+
+.dot {
+    cursor: pointer;
+    width: 8px;
+    height: 8px;
+    margin-right: 4px;
+    background-color: rgba(0, 0, 0, 0.3);
+    /*box-shadow: 0 0 5px 0px rgba(0,0,0,0.9);*/
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+.dot:last-child {
+    margin-right: 0;
+}
+
+.dot:hover {
+    background-color: #fff;
+}
+
+.dot--active {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Buttons */
+button {
+    cursor: pointer;
+    margin-right: 8px;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    background-color: #6ED29C;
+    color: #FFF;
+    transition: all 0.5s;
+}
+
+button:last-child {
+    margin-right: 0;
+}
+
+button:hover {
+    box-shadow: 0 1px #424242;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Mods */
+.disabled {
+    background-color: #DCCFCF;
+    color: #B0A8A8;
+    cursor: default;
+    pointer-events: none;
+}
+
+.d-none {
+    display: none;
+}
+
+.active {
+    opacity: 1;
+}
+
+.centered {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.commentNik{
+    display: flex;
+    flex-direction: column;
+}
+.commentLocation{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding-right: 200px;
+    padding-left: 200px;
+}
+.starLocation{
+    display: flex;
+    justify-content: space-evenly;
+}
+.nik{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    color: white;
+}
+.comment{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #FFFFFF;
+}
+/**/
+
+
+.flex-preMain {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background: url('https://www.reedanimalhospital.com/wp-content/uploads/2018/07/Reedanimalhospital-878447520_opt.jpg') no-repeat;
+    height: 458px;
+    width: 1000px;
+    padding: 5px 5px 5px 25px;
+}
+
+
+.preMain-text {
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 59px;
+
+    color: #FFFFFF;
+}
+
+
+.project-gallery {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: start;
+   background-color: #FFFFFF;
+    color: #6ED29C;
+
+}
+
+
+.project {
+    flex: 0 0 calc(20% - 20px);
+    margin-bottom: 40px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    opacity: 90%;
+}
+
+.project img {
+    width: 90%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+    transition: 0.2s linear;
+}
+
+.project img:hover {
+    width: 100%;
+}
+
+.project h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.project p {
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 50px;
+    color: #FFFFFF;
+}
+
+.contact-item {
+    flex-basis: 30%;
+}
+
+.contact-item h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Стили для карты */
+.map {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+    height: 400px; /* Задайте желаемую высоту */
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
